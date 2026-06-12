@@ -1,3 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
+
+.main-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(78, 78, 83, 0.85);
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
