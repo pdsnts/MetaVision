@@ -6,28 +6,35 @@
     <title>MetaVision - O museu virtual do Maracannes</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+
     <header class="main-header">
         <div class="logo">
-            <h2>MetaVision</h2>
+            <h2 style="color: var(--azul-tech); font-size: 1.5rem;">MetaVision</h2>
         </div>
         <nav class="nav-menu">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#historia">História</a></li>
                 <li><a href="#sobre">Sobre o Projeto</a></li>
                 <li><a href="#destaques">Destaques</a></li>
                 <li><a href="#proximo-evento">Próximo Maracannes</a></li>
+                <li><a href="#participantes">Participantes</a></li>
                 <li><a href="#como-acessar">Como Acessar</a></li>
             </ul>
         </nav>
-        <a href="#como-acessar">Acessar o Museu 3D</a>
+        <a href="#como-acessar" class="btn-highlight">Acessar o Museu 3D</a>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
+    <section id="inicio" class="hero-section">
+        <div class="hero-bg">
+            <div style="background: #000; width: 100%; height: 100%;"></div>
+        </div>
+        <div class="hero-content animate-fade">
             <h1>MetaVision - O museu virtual do Maracannes</h1>
+            <p>5 anos de história, agora em 3D. Explore salas, objetos e memórias como nunca antes.</p>
             <div class="hero-buttons">
                 <a href="#como-acessar" class="btn-primary">Entrar no Museu 3D</a>
                 <a href="#sobre" class="btn-secondary">Conheça o Projeto</a>
@@ -35,22 +42,57 @@
         </div>
     </section>
 
-      <section id="sobre">
+    <section id="historia" class="about-summary">
         <div class="container">
-            <h2>O que é o MetaVision?</h2>
+            <h2>História do Metavision</h2>
             <p>
-                MetaVision é mais que um site. É um museu interativo desenvolvido por alunos do SENAI para eternizar o Maracannes.
+                O Metavision nasceu da união entre a formação técnica do SENAI e a visão organizacional do SESI, tendo como idealizadores Wellington, Viceli e Vicente. Inicialmente, o projeto surgiu com a proposta de recriar a escola em um ambiente virtual 3D, explorando as possibilidades da tecnologia para representar os espaços e a experiência escolar de uma nova maneira.
             </p>
-            <a href="#" class="read-more">Leia mais sobre o projeto &rarr;</a>
+            <p>
+                Ao longo dos anos, porém, o projeto passou por diferentes ideias, adaptações e mudanças de escopo. Conforme a equipe evoluía e novas possibilidades eram identificadas, percebeu-se que o Metavision poderia ir além de uma simples representação virtual da escola.
+            </p>
+            <p>
+                Foi a partir desse processo de evolução que surgiu a ideia de transformar o projeto em um museu virtual do Maracannes, reunindo e preservando, em um ambiente 3D, a história e as diferentes edições do evento. Assim, o que começou como uma proposta de recriação da escola tornou-se um projeto voltado à memória, à cultura e à valorização das experiências construídas ao longo dos anos.
+            </p>
         </div>
     </section>
 
-     <section id="destaques">
+    <section id="sobre" class="about-summary">
         <div class="container">
-            <h2>Destaques do Museu</h2>
+            <h2>O que é o Metavision?</h2>
+            <p>
+                O Metavision é um museu virtual em 3D criado para preservar e apresentar a história do Maracannes de uma forma interativa e imersiva. Inspirado na estrutura e na experiência de espaços culturais, como o Teatro Firjan, o projeto busca transformar a trajetória do evento em uma experiência digital, permitindo que visitantes conheçam diferentes anos e momentos do Maracannes dentro de um ambiente virtual.
+            </p>
+            <p>
+                O projeto reúne diferentes áreas de atuação, integrando gestão, programação de jogos e web, design e modelagem 3D. Essa integração permite que cada parte do museu seja construída de forma colaborativa, unindo planejamento, tecnologia, criatividade e produção visual.
+            </p>
+            <p>
+                Mais do que um ambiente virtual, o Metavision tem como propósito preservar a memória do Maracannes e torná-la acessível de uma maneira moderna e interativa, conectando a organização e a experiência educacional do SESI à formação técnica e tecnológica do SENAI.
+            </p>
+        </div>
     </section>
 
-        <section id="proximo-evento" class="countdown-section">
+    <section id="destaques" class="highlights-section">
+        <div class="container">
+            <h2>Destaques do Museu</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Linha do Tempo Interativa</h3>
+                    <p>Navegue por 5 anos de história de forma imersiva e dinâmica.</p>
+                </div>
+                <div class="card">
+                    <h3>Acervo de Fotos e Vídeos</h3>
+                    <p>Veja momentos icônicos e nostálgicos coletados ao longo do Maracannes.</p>
+                </div>
+                <div class="card">
+                    <h3>Depoimentos em Áudio</h3>
+                    <p>Ouça relatos reais e emocionantes de participantes que fizeram história.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proximo-evento" class="countdown-section">
         <div class="container">
             <h2>Próximo Maracannes</h2>
             <div id="countdown" class="countdown-timer"></div>
@@ -58,40 +100,94 @@
         </div>
     </section>
 
-    <section id="como-acessar">
+    <section id="participantes" class="team-section">
+        <div class="container">
+            <h2>Quem fez o Metavision</h2>
+            <p>Os idealizadores e participantes que contribuíram para a construção do projeto.</p>
+            <div class="team-grid">
+                <figure class="team-member">
+                    <img src="img/participantes/placeholder.svg" alt="Foto de Wellington">
+                    <figcaption>Wellington</figcaption>
+                </figure>
+                <figure class="team-member">
+                    <img src="img/participantes/placeholder.svg" alt="Foto de Viceli">
+                    <figcaption>Viceli</figcaption>
+                </figure>
+                <figure class="team-member">
+                    <img src="img/participantes/placeholder.svg" alt="Foto de Vicente">
+                    <figcaption>Vicente</figcaption>
+                </figure>
+                <!-- Para adicionar mais pessoas: copie um bloco <figure> acima,
+                     troque a foto (ex.: img/participantes/nome.jpg) e o nome. -->
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <blockquote>
+                <p>"O MetaVision transforma a história do Maracannes em algo vivo. É incrível ver nossa trajetória em 3D."</p>
+                <cite>— Nome do Aluno/Professor, Função no Projeto</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="como-acessar" class="instructions-section">
         <div class="container">
             <h2>Como acessar o museu 3D?</h2>
-            <ul class="lista-passo-a-passo">
+            <ul class="steps-list">
                 <li><span>1</span>Clique no botão "Entrar no Museu 3D"</li>
                 <li><span>2</span>Use as teclas WASD ou setas para andar</li>
                 <li><span>3</span>Use o mouse para olhar ao redor</li>
                 <li><span>4</span>Clique nos objetos para descobrir informações</li>
             </ul>
+            <div class="compatibility-warning">
+                <p>⚠️ <strong>Aviso:</strong> Recomendamos usar Google Chrome ou Microsoft Edge no computador para melhor performance.</p>
+            </div>
+            
+            <!--
+                Jogo: exporte da Unity como WebGL e coloque os arquivos na pasta "jogo/"
+                (arquivo principal: jogo/index.html). Se não funcionar bem no site,
+                hospede no itch.io e troque o src do iframe e o link abaixo.
+            -->
+            <div class="game-container">
+                <iframe src="jogo/index.html" title="Metavision - Museu 3D" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="game-alt">
+                O jogo não carregou?
+                <a href="https://itch.io/" target="_blank" rel="noopener" class="read-more">Abrir no itch.io &rarr;</a>
+            </p>
         </div>
     </section>
 
     <footer class="main-footer">
+        <div class="footer-brand">
+            <h3 style="color: var(--azul-tech);">MetaVision</h3>
+            <p>Eternizando memórias do SENAI.</p>
+        </div>
         <div class="footer-links">
             <h4>Links Rápidos</h4>
+            <a href="#historia">História</a>
             <a href="#sobre">Sobre</a>
+            <a href="#participantes">Participantes</a>
             <a href="#destaques">Destaques</a>
             <a href="#como-acessar">Contato</a>
         </div>
-        <div class="footer-sociais">
+        <div class="footer-socials">
             <h4>Redes Sociais</h4>
             <a href="#" target="_blank">Instagram</a>
             <a href="#" target="_blank">YouTube</a>
         </div>
-        <div class="footer-contato">
+        <div class="footer-contact">
             <h4>Contato</h4>
             <p>metavision@senai.com.br</p>
         </div>
-        <div class="footer-creditos">
+        <div class="footer-credits">
             <p>&copy; 2026 MetaVision - Museu Virtual do Maracannes. Desenvolvido por alunos do SENAI.</p>
         </div>
     </footer>
 
-
-    <script src="./js/script.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>  
+</html>

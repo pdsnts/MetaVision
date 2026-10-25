@@ -1,25 +1,46 @@
-/*Usar esse arquivo para colocar as estilizações globais do projeto, como reset*/
-
+/* RESET DE ESTILOS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Colocar as variaveis de cores e fonts aqui */
-/*:root{}*/
+/* VARIÁVEIS DE IDENTIDADE VISUAL */
+:root {
+    --bg-principal: #0a0a0c;
+    --azul-tech: #00A3FF;
+    --dourado: #FFD700;
+    --texto-claro: #FFFFFF;
+    --texto-mutado: #CCCCCC;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --font-titulos: 'Poppins', 'Montserrat', sans-serif;
+    --font-corpo: 'Roboto', 'Open Sans', sans-serif;
+}
 
-/*body {} */
+/* CONFIGURAÇÃO PADRÃO DO CORPO */
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-mutado);
+    font-family: var(--font-corpo);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
+/* TÍTULOS */
 h1, h2, h3 {
+    color: var(--texto-claro);
+    font-family: var(--font-titulos);
     font-weight: 700;
 }
 
+/* LINKS GERAIS */
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
+    transition: all 0.3s ease;
 }
 
+/* CONTAINER PADRÃO */
 .container {
     width: 100%;
     max-width: 1200px;
